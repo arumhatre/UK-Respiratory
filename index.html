@@ -596,7 +596,7 @@
   }), $(".tabb_drawer_heading").click(function() {
     $(".tabb_content").hide();
     var a = $(this).attr("rel");
-    $("#" + a).fadeIn(), $(".tabb_drawer_heading").removeClass("d_active"), $(this).addClass("d_active"), $("ul.nptabbs li").removeClass("active"), $("ul.nptabbs li[rel^='" + d_activeTabb + "']").addClass("active")
+    $("#" + a).fadeIn(), $(".tabb_drawer_heading").removeClass("d_active"), $(this).addClass("d_active"), $("ul.nptabbs li").removeClass("active"), $("ul.nptabbs li[rel^='" + a + "']").addClass("active")
   }), $("ul.nptabbs li").last().addClass("tabb_last");
   </script>
 </body>
